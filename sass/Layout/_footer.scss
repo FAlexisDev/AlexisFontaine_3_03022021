@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  &__title {
+    font-size: 25px;
+    font-family: $title-font;
+    margin: 20px 0 10px 20px;
+  }
+  &__list {
+    list-style: none;
+    margin: 10px 0 20px 20px;
+    padding: 0;
+    & a {
+      text-decoration: none;
+      color: white;
+      font-family: $text-font;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    & li {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    & i {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "p3_omf",
+  "version": "1.0.0",
+  "description": "Projet 3 Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ysuun/AlexisFontaine_3_03022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ysuun/AlexisFontaine_3_03022021/issues"
+  },
+  "homepage": "https://github.com/Ysuun/AlexisFontaine_3_03022021#readme"
+}

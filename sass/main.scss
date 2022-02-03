@@ -4,8 +4,10 @@
 @import "./utils/extensions";
 @import "./base/base";
 @import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
+@import "./Layout/header";
+@import "./Layout/body";
+@import "./Layout/bloc_page";
+@import "./Layout/footer";
 @import "./pages/home_page";
 @import "./pages/menu_1";
 @import "./pages/menu_2";

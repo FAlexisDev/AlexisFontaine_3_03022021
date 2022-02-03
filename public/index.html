@@ -4,36 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/16621a91de.js"
       crossorigin="anonymous"
     ></script>
+
     <title>ohmyfood</title>
   </head>
   <body>
-    <div class="bloc_page">
-      <header>
-        <div class="logo">
-          <img src="./images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" />
+    <div class="bloc-page">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
         </div>
-        <div class="location">
+        <div class="header__location">
           <i class="fas fa-map-marker-alt"></i>
-          <p class="location_text">Paris, Belleville</p>
+          <p class="header__location--text">Paris, Belleville</p>
         </div>
       </header>
       <main>
         <section class="explore">
-          <h1>Réservez le menu qui vous convient</h1>
-          <h2>
-            Découvrez des restaurants d'exception, séléectionnés par nos soins.
-          </h2>
-          <button>
+          <div class="explore__title">
+            <h1 class="explore__title--1">
+              Réservez le menu qui vous convient
+            </h1>
+            <h2 class="explore__title--2">
+              Découvrez des restaurants d'exception, séléectionnés par nos
+              soins.
+            </h2>
+          </div>
+          <button class="explore__button">
             <p>Explorer nos restaurants</p>
           </button>
         </section>
 
         <section class="functioning">
-          <h1>Fonctionnement</h1>
+          <h1 class="functioning__title">Fonctionnement</h1>
           <nav class="functioning__step">
             <ul>
               <a
@@ -73,15 +80,17 @@
         </section>
       </main>
       <footer>
-        <div class="footer__ohmyfood">
-          <img src="./images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" />
-          <ul>
+        <div class="footer">
+          <h1 class="footer__title">ohmyfood</h1>
+          <ul class="footer__list">
             <a href="#"
-              ><li><i class="fas fa-utensils"></i></li
-            ></a>
+              ><li><i class="fas fa-utensils"></i>Proposer un restaurant</li></a
+            >
             <a href="#"
-              ><li><i class="fas fa-hands-helping"></i></li
-            ></a>
+              ><li>
+                <i class="fas fa-hands-helping"></i>Devenir partenaire
+              </li></a
+            >
             <a href="#"><li>Mentions légales</li></a>
             <a href="#"><li>Contact</li></a>
           </ul>
