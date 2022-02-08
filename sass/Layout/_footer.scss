@@ -1,10 +1,13 @@
 .footer {
+  position: absolute;
+
   display: flex;
   width: 100%;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   margin-top: auto;
+
   &__title {
     font-size: 25px;
     font-family: $title-font;

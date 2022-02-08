@@ -1,3 +1,9 @@
+.header {
+  & a {
+    display: none;
+  }
+}
+
 .explore {
   display: flex;
   flex-direction: column;
