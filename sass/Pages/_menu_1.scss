@@ -1,13 +1,26 @@
 .header {
-  & a {
+  &__logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    & a {
+      display: flex;
+      position: absolute;
+      left: 25px;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
   }
 }
 
 .restaurant-photo {
   width: 100%;
+  margin-top: -3px;
   &__photo {
     width: 100%;
+    height: 260px;
+    object-fit: cover;
   }
 }
 
@@ -41,6 +54,7 @@
       flex-direction: column;
       width: 90%;
       margin-bottom: 15px;
+
       & h5 {
         font-size: 15px;
         font-weight: 300;
@@ -56,12 +70,38 @@
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      border: 1px solid white;
       border-radius: 15px;
       background-color: white;
       margin-bottom: 15px;
       width: 90%;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
+      animation: apparition 3s 150ms;
+      height: 100%;
 
+      &--valid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary-color;
+        width: 15%;
+        height: 65px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: none;
+
+        & a {
+          display: flex;
+          align-items: center;
+          background-color: $tertiary-color;
+          font-size: 30px;
+          height: 100%;
+          color: white;
+          text-decoration: none;
+          & i {
+            animation: rotate 0.5s 150ms;
+          }
+        }
+      }
       &--title {
         & .food-name {
           font-size: 15px;

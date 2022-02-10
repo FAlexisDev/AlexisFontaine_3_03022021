@@ -1,10 +1,11 @@
+@import "./base/base";
+@import "./base/typography";
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
 @import "./Utils/keyframes";
-@import "./base/base";
-@import "./base/typography";
+@import "./Composants/animations";
 @import "./Composants/buttons";
 @import "./Layout/header";
 @import "./Layout/body";

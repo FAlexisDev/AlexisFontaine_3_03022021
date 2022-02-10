@@ -1,11 +1,9 @@
 @keyframes apparition {
   0% {
     opacity: 5%;
-    transform: scaleY(-999999px);
   }
   100% {
     opacity: 100%;
-    transform: scaleY(10px);
   }
 }
 
@@ -49,4 +47,13 @@
 }
 .restaurant__menu--text:hover .restaurant__menu--text--valid {
   display: flex;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-9999px);
+  }
 }
