@@ -1,2 +1,52 @@
+@keyframes apparition {
+  0% {
+    opacity: 5%;
+    transform: scaleY(-999999px);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(10px);
+  }
+}
 
-  
+@keyframes check {
+  0% {
+    transform: translate(99999px);
+  }
+
+  100% {
+    transform: translate(1px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-999999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loader1 {
+  0% {
+    transform: scale(1, 0.25);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.restaurant__menu--text:hover .restaurant__menu--text--valid {
+  display: flex;
+}

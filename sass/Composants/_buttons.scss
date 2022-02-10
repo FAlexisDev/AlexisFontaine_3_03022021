@@ -2,11 +2,12 @@
   width: 60%;
   border-radius: 30px;
   margin-bottom: 30px;
-  background: linear-gradient(167deg, $secondary-color, $primary-color);
+  background: $gradient;
   border: none;
   color: white;
   font-size: 17px;
   font-family: $text-font;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .command {
@@ -17,11 +18,12 @@
     width: 50%;
     border-radius: 30px;
     margin: 30px;
-    background: linear-gradient(167deg, $secondary-color, $primary-color);
+    background: $gradient;
     border: none;
     color: white;
     font-size: 15px;
     font-family: $text-font;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
