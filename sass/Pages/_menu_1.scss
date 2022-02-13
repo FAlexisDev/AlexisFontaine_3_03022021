@@ -61,6 +61,7 @@
         margin-bottom: 5px;
       }
       &--line {
+        margin: 0;
         border: 1px solid $tertiary-color;
         width: 30px;
       }
@@ -83,7 +84,7 @@
         justify-content: center;
         align-items: center;
         background-color: $tertiary-color;
-        width: 15%;
+        width: 80px;
         height: 65px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -103,6 +104,14 @@
         }
       }
       &--title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &--price {
+          display: flex;
+          align-items: flex-end;
+          margin-right: 10px;
+        }
         & .food-name {
           font-size: 15px;
           font-weight: 500;
@@ -118,7 +127,7 @@
       &--price p {
         font-size: 15px;
         font-weight: 500;
-        margin: 10px;
+        padding: 10px;
       }
     }
   }

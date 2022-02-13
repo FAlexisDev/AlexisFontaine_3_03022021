@@ -62,10 +62,17 @@
   animation-delay: 0.5s;
 }
 
-.restaurant__menu--text .first {
-  animation-delay: 1s;
+.restaurant__menu--text:hover .restaurant__menu--text--valid {
+  animation: check 0.4s;
+  transform-origin: right;
+  display: flex;
 }
 
-.two {
-  animation-delay: 0.5s;
+.menu__list--icons:hover .far,
+.menu__list--icons .fas {
+  display: none !important;
+}
+
+.menu__list--icons:hover .fas {
+  display: inline !important;
 }

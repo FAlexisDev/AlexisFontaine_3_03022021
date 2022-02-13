@@ -9,14 +9,22 @@
 
 @keyframes check {
   0% {
-    transform: translate(99999px);
+    transform: scaleX(0);
   }
 
   100% {
-    transform: translate(1px);
+    transform: scaleX(1);
   }
 }
 
+@keyframes check_text {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -44,9 +52,6 @@
   100% {
     transform: scale(1, 1);
   }
-}
-.restaurant__menu--text:hover .restaurant__menu--text--valid {
-  display: flex;
 }
 
 @keyframes translate {
