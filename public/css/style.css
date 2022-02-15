@@ -192,15 +192,23 @@
 }
 
 .explore__button {
+  display: flex;
+  justify-content: center;
   width: 60%;
   border-radius: 30px;
   margin-bottom: 30px;
-  background: linear-gradient(167deg, #ff79da, #9356dc);
   border: none;
+  background: linear-gradient(167deg, #ff79da, #9356dc);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.explore__button--btn {
+  border-radius: 30px;
+  width: 100%;
+  background: none;
   color: white;
   font-size: 17px;
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .command {
@@ -591,6 +599,95 @@ body {
   font-size: 15px;
   font-weight: 500;
   padding: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .bloc-page {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  .header__logo {
+    justify-content: flex-start;
+    padding: 10px;
+    background: white;
+    box-shadow: none;
+  }
+  .header__location {
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .explore {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+
+  .explore__button {
+    width: 20%;
+  }
+
+  .functioning {
+    width: 90%;
+    margin: auto;
+  }
+
+  .functioning__step ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .functioning__step ul a {
+    width: 20%;
+  }
+
+  .menu {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 0;
+  }
+  .menu h1 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .menu__display {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+  }
+
+  .menu__list {
+    width: 40%;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu__display {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+  }
+
+  .menu__list {
+    width: 35%;
+    margin-bottom: 80px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

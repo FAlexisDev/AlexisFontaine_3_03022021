@@ -1,0 +1,86 @@
+@media screen and (min-width: 992px) {
+  .bloc-page {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+
+    &__logo {
+      justify-content: flex-start;
+      padding: 10px;
+      background: white;
+      box-shadow: none;
+    }
+    &__location {
+      justify-content: flex-end;
+      padding: 10px;
+      background-color: white;
+    }
+  }
+  .explore {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+  .explore__button {
+    width: 20%;
+  }
+  .functioning {
+    width: 90%;
+    margin: auto;
+  }
+  .functioning__step {
+    & ul {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      & a {
+        width: 20%;
+      }
+    }
+  }
+  .menu {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 0;
+    & h1 {
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+  }
+  .menu__display {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+  }
+
+  .menu__list {
+    width: 40%;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu__display {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+  }
+
+  .menu__list {
+    width: 35%;
+    margin-bottom: 80px;
+  }
+}
