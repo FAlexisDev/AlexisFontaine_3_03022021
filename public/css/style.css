@@ -11,26 +11,35 @@
 }
 @keyframes in {
   from {
-    transform: scaleX(0);
+    transform: translateX(80px);
   }
   to {
-    transform: scaleX(1);
+    transform: scaleX(0px);
   }
 }
 @keyframes out {
   0% {
-    transform: scaleX(1);
+    transform: translateX(0px);
   }
   100% {
-    transform: scaleX(0);
+    transform: translateX(100px);
+    display: none;
   }
 }
-@keyframes check_text {
+@keyframes check_text_on {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-10px);
+    transform: translateX(-90px);
+  }
+}
+@keyframes check_text_off {
+  0% {
+    transform: translateX(-90px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 @keyframes rotate {
@@ -136,6 +145,16 @@
   display: flex;
 }
 
+.restaurant__menu--text:hover .restaurant__menu--text--valid i {
+  animation: rotate 0.5s 150ms;
+}
+
+.restaurant__menu--text .restaurant__menu--text--valid {
+  animation: out 0.4s ease-in-out;
+  transform-origin: right;
+  animation-fill-mode: forwards;
+}
+
 .menu__list--icons:hover .far,
 .menu__list--icons .fas {
   display: none !important;
@@ -158,8 +177,17 @@
   animation-delay: 1s !important;
 }
 
+.four {
+  animation-delay: 1.5s !important;
+}
+
 .restaurant__menu--text--title:hover .restaurant__menu--text--title--price {
-  animation: check_text 0.6s;
+  animation: check_text_on 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.restaurant__menu--text--title .restaurant__menu--text--title--price {
+  animation: check_text_off 0.6s;
   animation-fill-mode: forwards;
 }
 
@@ -231,6 +259,7 @@ body {
 }
 
 .footer {
+  bottom: 0;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -499,6 +528,7 @@ body {
   width: 30px;
 }
 .restaurant__menu--text {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -508,17 +538,20 @@ body {
   width: 90%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
   height: 100%;
+  overflow: hidden;
 }
 .restaurant__menu--text--valid {
-  display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
   width: 80px;
-  height: 65px;
+  height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  display: none;
+  display: flex;
+  overflow: hidden;
+  right: 0;
 }
 .restaurant__menu--text--valid a {
   display: flex;
@@ -528,9 +561,6 @@ body {
   height: 100%;
   color: white;
   text-decoration: none;
-}
-.restaurant__menu--text--valid a i {
-  animation: rotate 0.5s 150ms;
 }
 .restaurant__menu--text--title {
   display: flex;
@@ -546,11 +576,16 @@ body {
   font-size: 15px;
   font-weight: 500;
   margin: 10px;
+  text-overflow: ellipsis;
+}
+.restaurant__menu--text--title .food-name p {
+  text-overflow: ellipsis;
 }
 .restaurant__menu--text--title .food-details {
   font-size: 13px;
   font-weight: 300;
   margin: 10px;
+  text-overflow: ellipsis;
 }
 .restaurant__menu--text--price p {
   font-size: 15px;

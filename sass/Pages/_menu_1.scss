@@ -33,6 +33,7 @@
   border-top-right-radius: 40px;
   width: 100%;
   margin-top: -40px;
+
   &__title {
     display: flex;
     justify-content: space-between;
@@ -42,6 +43,7 @@
     font-family: $title-font;
     font-size: 20px;
   }
+
   &__menu {
     display: flex;
     flex-direction: column;
@@ -49,6 +51,7 @@
     width: 100%;
     margin: auto;
     font-family: $text-font;
+
     &--title {
       display: flex;
       flex-direction: column;
@@ -68,6 +71,7 @@
     }
 
     &--text {
+      position: relative;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
@@ -77,17 +81,20 @@
       width: 90%;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
       height: 100%;
+      overflow: hidden;
 
       &--valid {
-        display: flex;
+        position: absolute;
         justify-content: center;
         align-items: center;
         background-color: $tertiary-color;
         width: 80px;
-        height: 65px;
+        height: 100%;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        display: none;
+        display: flex;
+        overflow: hidden;
+        right: 0;
 
         & a {
           display: flex;
@@ -97,15 +104,14 @@
           height: 100%;
           color: white;
           text-decoration: none;
-          & i {
-            animation: rotate 0.5s 150ms;
-          }
         }
       }
+
       &--title {
         display: flex;
         justify-content: space-between;
         width: 100%;
+
         &--price {
           display: flex;
           align-items: flex-end;
@@ -115,11 +121,16 @@
           font-size: 15px;
           font-weight: 500;
           margin: 10px;
+          text-overflow: ellipsis;
+          & p {
+            text-overflow: ellipsis;
+          }
         }
         & .food-details {
           font-size: 13px;
           font-weight: 300;
           margin: 10px;
+          text-overflow: ellipsis;
         }
       }
 
