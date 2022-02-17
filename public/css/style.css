@@ -602,6 +602,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  /* home_page */
   .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
@@ -672,6 +673,12 @@ body {
   .menu__list {
     width: 40%;
     margin-bottom: 80px;
+  }
+
+  /* Menu */
+  .header__logo a {
+    right: 10px;
+    left: unset;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
