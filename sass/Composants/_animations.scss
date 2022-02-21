@@ -113,3 +113,13 @@
   animation: check_text_off 0.6s;
   animation-fill-mode: forwards;
 }
+
+
+.menu__list:hover {
+  animation: scale 0.4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.menu__list {
+  animation: scale_none 0.4s;
+}

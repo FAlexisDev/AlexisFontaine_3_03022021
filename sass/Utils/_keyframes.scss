@@ -81,3 +81,21 @@
     transform: translateX(-9999px);
   }
 }
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes scale_none {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

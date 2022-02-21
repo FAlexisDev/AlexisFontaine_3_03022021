@@ -1,12 +1,20 @@
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .footer {
-  bottom: 0;
   display: flex;
   width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  margin-top: auto;
-
   &__title {
     font-size: 25px;
     font-family: $title-font;
