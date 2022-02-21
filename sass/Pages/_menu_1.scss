@@ -111,6 +111,8 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         &--price {
           display: flex;
@@ -131,6 +133,10 @@
           font-weight: 300;
           margin: 10px;
           text-overflow: ellipsis;
+        }
+        &--food {
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
 

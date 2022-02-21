@@ -28,10 +28,10 @@
 }
 @keyframes check_text_on {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-80px);
+    transform: translateX(-90px);
   }
 }
 @keyframes check_text_off {
@@ -90,10 +90,6 @@
     transform: scale(1);
   }
 }
-.bloc-page {
-  animation: loading 0.5s 300ms;
-}
-
 .loader {
   display: flex;
   position: fixed;
@@ -194,43 +190,20 @@
 }
 
 .three {
-  animation-delay: 0.75s !important;
-}
-
-.four {
   animation-delay: 1s !important;
 }
 
-.five {
-  animation-delay: 1.25s;
+.four {
+  animation-delay: 1.5s !important;
 }
 
-.six {
-  animation-delay: 1.5s;
-}
-
-.seven {
-  animation-delay: 1.75s;
-}
-
-.height {
-  animation-delay: 2s;
-}
-
-.nine {
-  animation-delay: 2.25s;
-}
-
-.ten {
-  animation-delay: 2.5s;
-}
-
-.restaurant__menu--text--title:hover .restaurant__menu--text--title--price {
+.restaurant__menu--text--title:hover .restaurant__menu--text--title {
   animation: check_text_on 0.6s;
+  transform-origin: right;
   animation-fill-mode: forwards;
 }
 
-.restaurant__menu--text--title .restaurant__menu--text--title--price {
+.restaurant__menu--text--title .restaurant__menu--text--title {
   animation: check_text_off 0.6s;
   animation-fill-mode: forwards;
 }
@@ -311,11 +284,11 @@ body {
   position: relative;
 }
 
-.bloc-page,
-.bloc_page {
+.bloc-page {
   width: 100%;
   margin: 0 auto;
   min-height: 100%;
+  animation: loading 0.5s 300ms;
 }
 
 footer {
@@ -635,8 +608,6 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .restaurant__menu--text--title--price {
   display: flex;
@@ -658,10 +629,6 @@ footer {
   margin: 10px;
   text-overflow: ellipsis;
 }
-.restaurant__menu--text--title--food {
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 .restaurant__menu--text--price p {
   font-size: 15px;
   font-weight: 500;
@@ -670,8 +637,7 @@ footer {
 
 @media screen and (min-width: 992px) {
   /* home_page */
-  .bloc_page,
-.bloc-page {
+  .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
   }
@@ -741,6 +707,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: #f6f6f6;
   }
 
   .menu__list {
@@ -781,20 +748,6 @@ footer {
     right: 10px;
   }
 
-  .restaurant {
-    margin-top: 0px;
-    border-radius: unset;
-  }
-  .restaurant__title {
-    justify-content: center;
-  }
-  .restaurant__title h3 {
-    margin-right: 20px;
-    font-size: 30px;
-  }
-  .restaurant__menu--text {
-    width: 50%;
-  }
   .restaurant__menu--title {
     align-items: center;
   }

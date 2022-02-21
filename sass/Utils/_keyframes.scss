@@ -30,10 +30,10 @@
 
 @keyframes check_text_on {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-90px);
+    transform: translateX(-80px);
   }
 }
 @keyframes check_text_off {
