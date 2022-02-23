@@ -82,6 +82,7 @@
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
       height: 100%;
       overflow: hidden;
+      text-overflow: ellipsis;
 
       &--valid {
         position: absolute;
@@ -111,8 +112,8 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        text-overflow: ellipsis;
         overflow: hidden;
+        white-space: nowrap;
 
         &--price {
           display: flex;
@@ -123,20 +124,11 @@
           font-size: 15px;
           font-weight: 500;
           margin: 10px;
-          text-overflow: ellipsis;
-          & p {
-            text-overflow: ellipsis;
-          }
         }
         & .food-details {
           font-size: 13px;
           font-weight: 300;
           margin: 10px;
-          text-overflow: ellipsis;
-        }
-        &--food {
-          text-overflow: ellipsis;
-          overflow: hidden;
         }
       }
 

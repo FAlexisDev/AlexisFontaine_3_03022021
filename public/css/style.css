@@ -79,15 +79,23 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 @keyframes scale_none {
   0% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes favorite {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 .bloc-page {
@@ -263,23 +271,39 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
+.explore__button:hover {
+  background: linear-gradient(167deg, #ff88de, #9b63df);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+}
 
 .command {
   display: flex;
   justify-content: center;
   background-color: #f6f6f6;
+  padding-top: 15px;
 }
 .command__button {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  width: 60%;
   border-radius: 30px;
-  margin: 30px;
-  background: linear-gradient(167deg, #ff79da, #9356dc);
+  margin-bottom: 30px;
   border: none;
-  color: white;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  padding: 15px;
+  background: linear-gradient(167deg, #ff79da, #9356dc);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.command__button--text {
+  border-radius: 30px;
+  width: 100%;
+  background: none;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.command__button:hover {
+  background: linear-gradient(167deg, #ff88de, #9b63df);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
 }
 
 .header {
@@ -608,6 +632,7 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
   height: 100%;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant__menu--text--valid {
   position: absolute;
@@ -635,8 +660,8 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant__menu--text--title--price {
   display: flex;
@@ -647,20 +672,11 @@ footer {
   font-size: 15px;
   font-weight: 500;
   margin: 10px;
-  text-overflow: ellipsis;
-}
-.restaurant__menu--text--title .food-name p {
-  text-overflow: ellipsis;
 }
 .restaurant__menu--text--title .food-details {
   font-size: 13px;
   font-weight: 300;
   margin: 10px;
-  text-overflow: ellipsis;
-}
-.restaurant__menu--text--title--food {
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .restaurant__menu--text--price p {
   font-size: 15px;
@@ -677,12 +693,14 @@ footer {
   }
 
   .header {
+    margin: 10px;
     display: flex;
     flex-direction: row;
   }
   .header__logo {
     justify-content: flex-start;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
     background: white;
     box-shadow: none;
   }
@@ -695,7 +713,6 @@ footer {
   .explore {
     width: 100%;
     margin: auto;
-    margin-top: 50px;
     border-radius: 30px;
   }
 
@@ -797,6 +814,10 @@ footer {
   }
   .restaurant__menu--title {
     align-items: center;
+  }
+
+  .command__button {
+    width: 20%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
