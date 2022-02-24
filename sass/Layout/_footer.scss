@@ -8,11 +8,10 @@ footer {
 }
 
 .footer {
-  display: flex;
+  @extend .display_flex_column;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   &__title {

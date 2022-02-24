@@ -1,8 +1,7 @@
 .header {
   &__logo {
-    display: flex;
+    @extend .display_flex_center;
     align-items: center;
-    justify-content: center;
     & a {
       display: flex;
       position: absolute;
@@ -26,9 +25,8 @@
 
 .restaurant {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #f6f6f6;
+  @extend .display_flex_column;
+  background-color: $background-color;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   width: 100%;
@@ -45,16 +43,14 @@
   }
 
   &__menu {
-    display: flex;
-    flex-direction: column;
+    @extend .display_flex_column;
     align-items: center;
     width: 100%;
     margin: auto;
     font-family: $text-font;
 
     &--title {
-      display: flex;
-      flex-direction: column;
+      @extend .display_flex_column;
       width: 90%;
       margin-bottom: 15px;
 
@@ -85,15 +81,14 @@
       text-overflow: ellipsis;
 
       &--valid {
+        @extend .display_flex_center;
         position: absolute;
-        justify-content: center;
         align-items: center;
         background-color: $tertiary-color;
         width: 80px;
         height: 100%;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        display: flex;
         overflow: hidden;
         right: 0;
 
