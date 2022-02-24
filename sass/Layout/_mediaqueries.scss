@@ -79,7 +79,8 @@
   }
 
   footer {
-    @extend .display_flex_center;
+    display: flex;
+    justify-content: center;
     height: 10%;
   }
   .footer {
