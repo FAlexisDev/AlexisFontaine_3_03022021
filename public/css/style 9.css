@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap");
-.display_flex_column, .restaurant .entree, .restaurant .dish, .restaurant .dessert, .restaurant__menu--title, .restaurant__menu, .restaurant, .menu__display, .menu, .functioning__step ul, .functioning, .explore__title, .explore, .footer, .header, .loader {
+.display_flex_column, .restaurant__menu--title, .restaurant__menu, .restaurant, .menu__display, .menu, .functioning__step ul, .functioning, .explore__title, .explore, .footer, .header, .loader {
   display: flex;
   flex-direction: column;
 }
@@ -653,22 +653,13 @@ footer {
   font-weight: 500;
   padding: 10px;
 }
-.restaurant .entree, .restaurant .dish, .restaurant .dessert {
-  width: 100%;
-}
 
 @media screen and (min-width: 992px) {
   /* home_page */
-  body {
-    height: 100vh;
-    padding: 0;
-  }
-
   .bloc_page,
 .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
-    height: 100%;
   }
 
   .header {
@@ -736,12 +727,12 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .menu__list {
-    width: 45%;
-    margin: 10px;
+    width: 40%;
+    margin-bottom: 80px;
   }
 
   footer {
@@ -751,7 +742,6 @@ footer {
   }
 
   .footer {
-    width: 98%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -766,7 +756,7 @@ footer {
     margin: 0 auto;
   }
   .footer__list li {
-    margin: 5px;
+    margin: 0;
   }
 
   /* Menu */
@@ -790,14 +780,10 @@ footer {
     font-size: 30px;
   }
   .restaurant__menu--text {
-    width: 80%;
+    width: 50%;
   }
   .restaurant__menu--title {
     align-items: center;
-  }
-
-  .menu_meal {
-    display: flex;
   }
 
   .command__button {
@@ -805,59 +791,18 @@ footer {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .functioning__step ul a li {
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    padding: 0;
-  }
-  .menu h1 {
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-
   .menu__display {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
   }
 
   .menu__list {
     width: 45%;
-    margin: 10px;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    height: 10%;
-  }
-
-  .footer {
-    width: 90%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer__title {
-    margin: 0;
-  }
-  .footer__list {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto;
-  }
-  .footer__list li {
-    margin: 5px;
+    margin-bottom: 80px;
   }
 }
 

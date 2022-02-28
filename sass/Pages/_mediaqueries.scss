@@ -1,14 +1,22 @@
 @media screen and (min-width: 992px) {
   /* home_page */
 
+  body {
+    height: 100vh;
+    padding: 0;
+  }
+  
+  
   .bloc_page,
   .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
+    height: 100%;
+    
   }
 
   .header {
-    margin: 10px;
+    margin: 10px; 
     display: flex;
     flex-direction: row;
 
@@ -70,12 +78,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
   }
 
   .menu__list {
-    width: 40%;
-    margin-bottom: 80px;
+    width: 45%;
+    margin: 10px;
   }
 
   footer {
@@ -84,6 +93,7 @@
     height: 10%;
   }
   .footer {
+    width: 98%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +106,7 @@
       width: 70%;
       margin: 0 auto;
       & li {
-        margin: 0;
+        margin: 5px;
       }
     }
   }
@@ -125,31 +135,85 @@
     }
     &__menu {
       &--text {
-        width: 50%;
+        width: 80%;
       }
       &--title {
         align-items: center;
+        
       }
     }
   }
 
+  .menu_meal {
+    display: flex;
+  }
   .command__button {
     width: 20%;
   }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+ 
+  .functioning__step {
+    & ul {
+      & a {
+        & li {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .menu {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 0;
+
+    & h1 {
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+  }
   .menu__display {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: $background-color;
+    justify-content: center;
+    
   }
 
   .menu__list {
-    width: 35%;
-    margin-bottom: 80px;
+    width: 45%;
+    margin: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+  }
+  .footer {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &__title {
+      margin: 0;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      margin: 0 auto;
+      & li {
+        margin: 5px;
+      }
+    }
+  
   }
 }

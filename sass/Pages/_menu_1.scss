@@ -134,4 +134,10 @@
       }
     }
   }
+
+  .entree, .dish, .dessert {
+    width: 100%;
+    @extend .display_flex_column;
+
+  }
 }
