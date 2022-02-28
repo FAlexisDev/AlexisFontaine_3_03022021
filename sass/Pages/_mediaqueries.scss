@@ -1,22 +1,23 @@
 @media screen and (min-width: 992px) {
   /* home_page */
-
+  html {
+    height: 100%;
+  }
   body {
-    height: 100vh;
+    height: 100%;
+    min-height: 100%;
     padding: 0;
   }
-  
-  
+
   .bloc_page,
   .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
     height: 100%;
-    
   }
 
   .header {
-    margin: 10px; 
+    margin: 10px;
     display: flex;
     flex-direction: row;
 
@@ -62,12 +63,6 @@
     }
   }
   .menu {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    padding: 0;
-
     & h1 {
       padding-top: 30px;
       padding-bottom: 10px;
@@ -79,7 +74,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
 
   .menu__list {
@@ -88,9 +82,7 @@
   }
 
   footer {
-    display: flex;
     justify-content: center;
-    height: 10%;
   }
   .footer {
     width: 98%;
@@ -121,10 +113,12 @@
       }
     }
   }
-
+  .restaurant-photo__photo {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
   .restaurant {
-    margin-top: 0px;
-    border-radius: unset;
+    margin-top: 100px;
     &__title {
       justify-content: center;
 
@@ -139,23 +133,20 @@
       }
       &--title {
         align-items: center;
-        
       }
     }
   }
 
   .menu_meal {
     display: flex;
+    align-items: flex-start;
   }
   .command__button {
     width: 20%;
   }
-
-
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
- 
+@media screen and (min-width: 768px) {
   .functioning__step {
     & ul {
       & a {
@@ -184,7 +175,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
 
   .menu__list {
@@ -214,6 +204,5 @@
         margin: 5px;
       }
     }
-  
   }
 }

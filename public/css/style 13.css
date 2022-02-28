@@ -797,7 +797,7 @@ footer {
 
   .menu_meal {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   .command__button {
