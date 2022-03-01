@@ -13,7 +13,7 @@
   .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
-    height: 100%;
+    width: 90%;
   }
 
   .header {
@@ -74,6 +74,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .menu__list {
@@ -118,6 +119,7 @@
     border-bottom-right-radius: 20px;
   }
   .restaurant {
+    padding-bottom: 50px;
     margin-top: 100px;
     &__title {
       justify-content: center;
@@ -129,6 +131,7 @@
     }
     &__menu {
       &--text {
+        margin-bottom: 25px;
         width: 80%;
       }
       &--title {
@@ -141,8 +144,15 @@
     display: flex;
     align-items: flex-start;
   }
-  .command__button {
-    width: 20%;
+
+  .command {
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    &__button {
+      width: 20%;
+    }
   }
 }
 

@@ -109,7 +109,11 @@
         width: 100%;
         overflow: hidden;
         white-space: nowrap;
-
+        &--food {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
         &--price {
           display: flex;
           align-items: flex-end;
@@ -135,9 +139,10 @@
     }
   }
 
-  .entree, .dish, .dessert {
+  .entree,
+  .dish,
+  .dessert {
     width: 100%;
     @extend .display_flex_column;
-
   }
 }

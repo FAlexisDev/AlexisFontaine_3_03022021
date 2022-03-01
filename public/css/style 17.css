@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap");
-.display_flex_column, .restaurant .entree,
-.restaurant .dish,
-.restaurant .dessert, .restaurant__menu--title, .restaurant__menu, .restaurant, .menu__display, .menu, .functioning__step ul, .functioning, .explore__title, .explore, .footer, .header, .loader {
+.display_flex_column, .restaurant .entree, .restaurant .dish, .restaurant .dessert, .restaurant__menu--title, .restaurant__menu, .restaurant, .menu__display, .menu, .functioning__step ul, .functioning, .explore__title, .explore, .footer, .header, .loader {
   display: flex;
   flex-direction: column;
 }
@@ -189,6 +187,7 @@
   animation: out 0.4s ease-in-out;
   transform-origin: right;
   animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 
 .menu__list--icons:hover .far,
@@ -634,11 +633,6 @@ footer {
   overflow: hidden;
   white-space: nowrap;
 }
-.restaurant__menu--text--title--food {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .restaurant__menu--text--title--price {
   display: flex;
   align-items: flex-end;
@@ -659,9 +653,7 @@ footer {
   font-weight: 500;
   padding: 10px;
 }
-.restaurant .entree,
-.restaurant .dish,
-.restaurant .dessert {
+.restaurant .entree, .restaurant .dish, .restaurant .dessert {
   width: 100%;
 }
 
@@ -681,7 +673,7 @@ footer {
 .bloc-page {
     max-width: 1300px;
     margin: 0 auto;
-    width: 90%;
+    height: 100%;
   }
 
   .header {
@@ -789,7 +781,6 @@ footer {
   }
 
   .restaurant {
-    padding-bottom: 50px;
     margin-top: 100px;
   }
   .restaurant__title {
@@ -800,7 +791,6 @@ footer {
     font-size: 30px;
   }
   .restaurant__menu--text {
-    margin-bottom: 25px;
     width: 80%;
   }
   .restaurant__menu--title {
@@ -812,12 +802,6 @@ footer {
     align-items: flex-start;
   }
 
-  .command {
-    padding-bottom: 50px;
-    margin-bottom: 150px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
   .command__button {
     width: 20%;
   }

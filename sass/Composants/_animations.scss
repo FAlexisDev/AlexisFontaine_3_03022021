@@ -78,6 +78,7 @@
   animation: out 0.4s ease-in-out;
   transform-origin: right;
   animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 
 .menu__list--icons:hover .far,
@@ -90,7 +91,7 @@
 }
 
 .restaurant__menu--text {
-  animation: appearance 1s 150ms;
+  animation: appearance 1s;
   animation-fill-mode: backwards;
 }
 
@@ -130,7 +131,7 @@
   animation-delay: 2.5s;
 }
 
-.restaurant__menu--text--title:hover .restaurant__menu--text--title--price {
+.restaurant__menu--text--title:hover .restaurant__menu--text {
   animation: check_text_on 0.6s;
   animation-fill-mode: forwards;
 }
