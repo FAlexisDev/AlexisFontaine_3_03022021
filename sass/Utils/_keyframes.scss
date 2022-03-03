@@ -30,18 +30,18 @@
 
 @keyframes check_text_on {
   0% {
-    transform: translateX(0);
+    padding-right: 10px;
   }
   100% {
-    transform: translateX(-90px);
+    padding-right: 90px;
   }
 }
 @keyframes check_text_off {
   0% {
-    transform: translateX(-90px);
+    padding-right: 90px;
   }
   100% {
-    transform: translateX(0px);
+    padding-right: 10px;
   }
 }
 @keyframes rotate {
@@ -68,7 +68,6 @@
   0% {
     transform: scale(1, 0.25);
   }
-
   100% {
     transform: scale(1, 1);
   }
@@ -102,7 +101,7 @@
 }
 @keyframes press {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
   100% {
     transform: translateY(5px);

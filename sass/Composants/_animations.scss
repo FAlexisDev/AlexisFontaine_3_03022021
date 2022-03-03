@@ -144,6 +144,7 @@
 .restaurant__menu--text:hover .restaurant__menu--text--title--price {
   animation: check_text_on 0.6s;
   animation-fill-mode: forwards;
+  transform-origin: right;
 }
 
 .restaurant__menu--text .restaurant__menu--text--title--price {

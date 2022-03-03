@@ -2,7 +2,7 @@
   "name": "p3_omf",
   "version": "1.0.0",
   "description": "Projet 3 Openclassrooms",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },

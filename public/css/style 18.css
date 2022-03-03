@@ -40,18 +40,18 @@
 }
 @keyframes check_text_on {
   0% {
-    padding-right: 10px;
+    margin-right: 10px;
   }
   100% {
-    padding-right: 90px;
+    margin-right: 90px;
   }
 }
 @keyframes check_text_off {
   0% {
-    padding-right: 90px;
+    margin-right: 90px;
   }
   100% {
-    padding-right: 10px;
+    margin-right: 10px;
   }
 }
 @keyframes rotate {
@@ -74,6 +74,12 @@
 @keyframes loader1 {
   0% {
     transform: scale(1, 0.25);
+  }
+  25% {
+    transform: scale(1, 0.5);
+  }
+  75% {
+    transform: scale(1, 0.75);
   }
   100% {
     transform: scale(1, 1);
@@ -105,7 +111,7 @@
 }
 @keyframes press {
   0% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
   100% {
     transform: translateY(5px);
@@ -253,7 +259,7 @@
   animation-delay: 2.5s;
 }
 
-.restaurant__menu--text:hover .restaurant__menu--text--title--price {
+.restaurant__menu--text:hover .restaurant__menu--text--title {
   animation: check_text_on 0.6s;
   animation-fill-mode: forwards;
   transform-origin: right;
@@ -656,12 +662,8 @@ footer {
   display: flex;
   align-items: flex-end;
   margin-right: 10px;
-  overflow: hidden;
 }
-.restaurant__menu--text--title--food {
-  overflow: hidden;
-}
-.restaurant__menu--text--title--food .food-name {
+.restaurant__menu--text--title .food-name {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -669,7 +671,7 @@ footer {
   font-weight: 500;
   margin: 10px;
 }
-.restaurant__menu--text--title--food .food-details {
+.restaurant__menu--text--title .food-details {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
