@@ -3,14 +3,9 @@
   html {
     height: 100%;
   }
-  body {
-    height: 100%;
-    min-height: 100%;
-    padding: 0;
-  }
-
   .bloc_page,
   .bloc-page {
+    height: auto;
     max-width: 1300px;
     margin: 0 auto;
     width: 90%;
@@ -74,7 +69,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   .menu__list {
@@ -115,8 +110,8 @@
     }
   }
   .restaurant-photo__photo {
+    height: 300px;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
   }
   .restaurant {
     padding-bottom: 50px;
@@ -143,11 +138,11 @@
   .menu_meal {
     display: flex;
     align-items: flex-start;
+    height: 400px;
+    align-items: center;
   }
 
   .command {
-    padding-bottom: 50px;
-    margin-bottom: 140px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     &__button {
