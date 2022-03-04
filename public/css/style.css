@@ -691,6 +691,7 @@ footer {
 .restaurant .dish,
 .restaurant .dessert {
   width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
