@@ -6,15 +6,11 @@
   border: none;
   background: $gradient;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  &--btn {
-    border-radius: 30px;
-    width: 100%;
-    background: none;
-    color: white;
-    font-size: 17px;
-    text-decoration: none;
-    font-family: $text-font;
-  }
+  color: white;
+  font-family: $text-font;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
   &:hover {
     background: linear-gradient(
       167deg,
@@ -37,15 +33,11 @@
     border: none;
     background: $gradient;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    &--text {
-      border-radius: 30px;
-      width: 100%;
-      background: none;
-      color: white;
-      font-size: 17px;
-      text-decoration: none;
-      font-family: $text-font;
-    }
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: $text-font;
+
     &:hover {
       background: linear-gradient(
         167deg,

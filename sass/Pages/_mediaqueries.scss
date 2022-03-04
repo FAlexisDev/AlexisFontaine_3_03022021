@@ -46,13 +46,13 @@
       display: flex;
       justify-content: space-around;
       flex-direction: row;
-      & a {
-        width: 20%;
+      & li {
+        width: 50%;
         font-size: 18px;
         & .numbers {
           width: 10px;
           height: 9px;
-          margin: 0px 20px 0px -40px;
+          left: -15px;
         }
       }
     }
@@ -154,8 +154,8 @@
 @media screen and (min-width: 768px) {
   .functioning__step {
     & ul {
-      & a {
-        & li {
+      & li {
+        & a {
           display: flex;
           justify-content: center;
           font-size: 18px;

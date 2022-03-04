@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.display_flex_center, .restaurant__menu--text--valid, .header__logo, .functioning__step a .numbers, .header__location, .command__button, .command, .explore__button, .loader__circle {
+.display_flex_center, .restaurant__menu--text--valid, .header__logo, .functioning__step li a .numbers, .header__location, .command__button, .command, .explore__button, .loader__circle {
   display: flex;
   justify-content: center;
 }
@@ -289,15 +289,11 @@
   border: none;
   background: linear-gradient(167deg, #ff79da, #9356dc);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.explore__button--btn {
-  border-radius: 30px;
-  width: 100%;
-  background: none;
   color: white;
-  font-size: 17px;
-  text-decoration: none;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
 }
 .explore__button:hover {
   background: linear-gradient(167deg, #ff88de, #9b63df);
@@ -315,11 +311,6 @@
   border: none;
   background: linear-gradient(167deg, #ff79da, #9356dc);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.command__button--text {
-  border-radius: 30px;
-  width: 100%;
-  background: none;
   color: white;
   font-size: 17px;
   text-decoration: none;
@@ -395,6 +386,7 @@ footer {
   text-decoration: none;
   color: white;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 .footer__list a:hover {
   text-decoration: underline;
@@ -447,46 +439,57 @@ footer {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
-.functioning__step a {
+.functioning__step li {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.functioning__step li a {
+  display: flex;
+  position: relative;
   list-style: none;
   background-color: #f6f6f6;
   border-radius: 20px;
   width: 70%;
   text-align: center;
+  align-items: center;
   margin-bottom: 20px;
   padding: 25px;
   text-decoration: none;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
 }
-.functioning__step a .numbers {
-  margin: 0px 20px 0px -35px;
+.functioning__step li a .numbers {
+  position: absolute;
+  left: -10px;
   background-color: #9356dc;
-  border: 1px solid #9356dc;
+  border: none;
   border-radius: 50%;
   padding: 10px;
-  width: 2px;
-  height: 2px;
+  font-size: 15px;
+  width: 5px;
+  height: 5px;
   align-items: center;
   color: white;
 }
-.functioning__step a:hover {
+.functioning__step li a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px 0 15px;
+}
+.functioning__step li a i .fas {
+  font-size: 15px;
+}
+.functioning__step li a:hover {
   background-color: #f2eafb;
 }
-.functioning__step a:hover i {
+.functioning__step li a:hover i {
   color: #9356dc;
-}
-.functioning__step li {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-.functioning__step li i {
-  margin-right: 30px;
-  width: 19px;
-  height: 16px;
 }
 
 .menu {
@@ -746,14 +749,14 @@ footer {
     justify-content: space-around;
     flex-direction: row;
   }
-  .functioning__step ul a {
-    width: 20%;
+  .functioning__step ul li {
+    width: 50%;
     font-size: 18px;
   }
-  .functioning__step ul a .numbers {
+  .functioning__step ul li .numbers {
     width: 10px;
     height: 9px;
-    margin: 0px 20px 0px -40px;
+    left: -15px;
   }
 
   .menu h1 {
@@ -847,7 +850,7 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
-  .functioning__step ul a li {
+  .functioning__step ul li a {
     display: flex;
     justify-content: center;
     font-size: 18px;
