@@ -91,15 +91,6 @@
   transition-timing-function: cubic-bezier(0, 0.01, 0.53, 0.51);
 }
 
-.menu__list--icons:hover .far,
-.menu__list--icons .fas {
-  display: none !important;
-}
-
-.menu__list--icons:hover .fas {
-  display: inline !important;
-}
-
 .restaurant__menu--text {
   animation: appearance 1s;
   animation-fill-mode: backwards;
@@ -168,4 +159,11 @@
 .explore__button:hover {
   animation: press 0.4s infinite alternate;
   transition: cubic-bezier(1, 0, 1, 1.01);
+}
+
+.menu__list--icons:hover .fas {
+  animation: full 0.5s ease-in-out forwards;
+}
+.menu__list--icons .fas {
+  transform: scale(0);
 }

@@ -125,6 +125,22 @@
     & a {
       text-decoration: none;
     }
+    &--icons {
+      position: absolute;
+      right: 25px;
+      top: 35%;
+      & .far,
+      .fas {
+        position: absolute;
+        background-image: $gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 25px;
+
+        top: 0px;
+      }
+    }
     &--img {
       position: relative;
       & p {
@@ -146,6 +162,7 @@
       }
     }
     &--title {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -162,14 +179,6 @@
         color: black;
         font-weight: 300;
         font-size: 15px;
-      }
-      & .far,
-      .fas {
-        background-image: $gradient;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-size: 20px;
       }
     }
   }
