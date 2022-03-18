@@ -41,6 +41,22 @@
     margin: auto;
     font-family: $title-font;
     font-size: 20px;
+    &--icons {
+      position: absolute;
+      right: 25px;
+      top: 28px;
+      & .far,
+      .fas {
+        position: absolute;
+        background-image: $gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 25px;
+        top: 0px;
+        right: 9px;
+      }
+    }
   }
 
   &__menu {

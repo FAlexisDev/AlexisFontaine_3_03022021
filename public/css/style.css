@@ -283,11 +283,13 @@
   transition: cubic-bezier(1, 0, 1, 1.01);
 }
 
-.menu__list--icons:hover .fas {
+.menu__list--icons:hover .fas,
+.restaurant__title--icons:hover .fas {
   animation: full 0.5s ease-in-out forwards;
 }
 
-.menu__list--icons .fas {
+.menu__list--icons .fas,
+.restaurant__title--icons .fas {
   transform: scale(0);
 }
 
@@ -619,6 +621,22 @@ footer {
   margin: auto;
   font-family: "Shrikhand", cursive;
   font-size: 20px;
+}
+.restaurant__title--icons {
+  position: absolute;
+  right: 25px;
+  top: 28px;
+}
+.restaurant__title--icons .far,
+.restaurant__title--icons .fas {
+  position: absolute;
+  background-image: linear-gradient(167deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 25px;
+  top: 0px;
+  right: 9px;
 }
 .restaurant__menu {
   align-items: center;
